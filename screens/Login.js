@@ -1,17 +1,17 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import { Text, View, Image } from "react-native";
 
 export default function Login() {
   return (
-    <View style={{ backgroundColo: "red" }}>
+    <View style={{ flex: 1 }}>
       <Image
         style={{
           width: 150,
           height: 150,
         }}
-        source={{ uri: "https://unsplash.com/photos/LSNJ-pltdu8" }}
+        source={{ uri: "https://unsplash.com/photos/vISNAATFXlE" }}
       />
-      <Text style={{ color: "black" }}> Welcome </Text>
+      <Text style={{ color: "black" }}>Hello</Text>
     </View>
   );
 }

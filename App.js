@@ -13,8 +13,8 @@ export default function App() {
     <View style={{ flex: 1 }}>
       <NavigationContainer>
         <MainNavigator.Navigator initialRouteName="Login">
-          <MainNavigator.Screen name="Login" component={Login} />
           <MainNavigator.Screen name="Home" component={Home} />
+          <MainNavigator.Screen name="Login" component={Login} />
         </MainNavigator.Navigator>
       </NavigationContainer>
     </View>
