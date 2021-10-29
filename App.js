@@ -10,7 +10,7 @@ export default function App() {
   const MainNavigator = createStackNavigator();
 
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <NavigationContainer>
         <MainNavigator.Navigator initialRouteName="Login">
           <MainNavigator.Screen name="Login" component={Login} />
