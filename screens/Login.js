@@ -4,11 +4,18 @@ import { AntDesign } from "@expo/vector-icons";
 
 export default function Login() {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+    <View
+      style={{
+        flex: 1,
+        alignItems: "center",
+        backgroundColor: "snow",
+        justifyContent: "center",
+      }}
+    >
       <Image
         style={{
-          width: 200,
-          height: 250,
+          width: 250,
+          height: 300,
           borderRadius: 10,
           marginBottom: 20,
         }}
@@ -19,12 +26,12 @@ export default function Login() {
 
       <TouchableOpacity
         style={{
-          background: "#008b8b",
+          background: "#b0c4de",
           borderRadius: 10,
           flexDirection: "row",
           alignItems: "center",
           padding: 10,
-          paddingHorizontal: 60,
+          paddingHorizontal: 50,
           marginTop: 20,
         }}
       >
@@ -34,8 +41,8 @@ export default function Login() {
           style={{
             color: "black",
             fontSize: 15,
-            fontWeight: "300",
-            marginLeft: 15,
+            fontWeight: "250",
+            marginLeft: 10,
           }}
         >
           Login with Google
@@ -43,7 +50,7 @@ export default function Login() {
       </TouchableOpacity>
       <TouchableOpacity
         style={{
-          background: "#1e90ff",
+          background: "#20b2aa",
           borderRadius: 10,
           padding: 10,
           paddingHorizontal: 60,
@@ -51,9 +58,15 @@ export default function Login() {
         }}
       >
         <Text style={{ color: "black", fontSize: 15, fontWeight: "300" }}>
-          Continue to sign up
+          Continue to Sign up
         </Text>
       </TouchableOpacity>
+      <Text style={{ marginTop: 10, fontWeight: "500", color: "black" }}>
+        Already a member?{" "}
+        <TouchableOpacity>
+          <Text style={{ color: "crimson", fontWeight: "bold" }}>Login</Text>
+        </TouchableOpacity>
+      </Text>
     </View>
   );
 }
