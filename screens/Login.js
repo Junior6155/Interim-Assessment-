@@ -35,8 +35,6 @@ export default function Login({ navigation }) {
           marginTop: 20,
         }}
       >
-        <AntDesign name="google" size={24} color="red" />
-
         <Text
           style={{
             color: "black",
@@ -45,7 +43,7 @@ export default function Login({ navigation }) {
             marginLeft: 15,
           }}
         >
-          Login with Google
+          Username or email
         </Text>
       </TouchableOpacity>
       <TouchableOpacity
@@ -58,11 +56,10 @@ export default function Login({ navigation }) {
         }}
       >
         <Text style={{ color: "black", fontSize: 15, fontWeight: "300" }}>
-          Continue to Sign up
+          Password
         </Text>
       </TouchableOpacity>
       <Text style={{ marginTop: 10, fontWeight: "500", color: "black" }}>
-        Already a member?{" "}
         <TouchableOpacity
           onPress={() => {
             navigation.navigate("Home");
