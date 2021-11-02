@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, Image, TouchableOpacity } from "react-native";
+import { Text, View, Image, TouchableOpacity, TextInput } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 export default function Login({ navigation }) {
@@ -24,7 +24,7 @@ export default function Login({ navigation }) {
         }}
       />
 
-      <TouchableOpacity
+      <TextInput
         style={{
           background: "#b0c4de",
           borderRadius: 10,
@@ -45,7 +45,7 @@ export default function Login({ navigation }) {
         >
           Username or email
         </Text>
-      </TouchableOpacity>
+      </TextInput>
       <TouchableOpacity
         style={{
           background: "#20b2aa",
