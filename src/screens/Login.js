@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, Image, TouchableOpacity } from "react-native";
+import { Text, TextInput, View, Image, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 export default function Login({ navigation }) {
@@ -24,52 +24,55 @@ export default function Login({ navigation }) {
         }}
       />
 
-      <TouchableOpacity
+      <View
         style={{
-          background: "#b0c4de",
+          background: "#00bfff",
           borderRadius: 10,
           flexDirection: "row",
           alignItems: "center",
-          padding: 10,
-          paddingHorizontal: 50,
-          marginTop: 20,
+          padding: 5,
+
+          marginTop: 5,
         }}
       >
-        <AntDesign name="user" size={24} color="black" />
-        <Text
-          style={{
-            color: "black",
-            fontSize: 15,
-            fontWeight: "300",
-            marginLeft: 15,
-          }}
-        >
-          Username or email
-        </Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={{
-          alignItems: "center",
-          background: "#20b2aa",
-          borderRadius: 10,
-          flexDirection: "row",
-          padding: 10,
-          paddingHorizontal: 60,
-          marginTop: 20,
-        }}
-      >
-        <AntDesign name="lock" size={24} color="black" />
-        <Text
+        <AntDesign name="user" size={24} color="black" />{" "}
+        <TextInput
           style={{
             color: "black",
             marginLeft: 10,
             fontSize: 15,
-            fontWeight: "300",
+            fontWeight: "300, bold",
           }}
-        >
-          Password
-        </Text>
-      </TouchableOpacity>
+          placeholder="Username or email"
+          keyboardType="ascii-capable"
+        />
+      </View>
+
+      <View
+        style={{
+          alignItems: "center",
+          background: "#1e90ff",
+          borderRadius: 10,
+          flexDirection: "row",
+          padding: 5,
+
+          marginTop: 5,
+        }}
+      >
+        {" "}
+        <AntDesign name="lock" size={24} color="black" />
+        <TextInput
+          style={{
+            color: "#black",
+            fontSize: 15,
+            fontWeight: "300, bold",
+            marginLeft: 15,
+          }}
+          placeholder="Password"
+          keyboardType="ascii-capable"
+        />
+      </View>
+
       <Text style={{ marginTop: 10, fontWeight: "500", color: "black" }}>
         <TouchableOpacity
           onPress={() => {
@@ -77,6 +80,15 @@ export default function Login({ navigation }) {
           }}
         >
           <Text style={{ color: "crimson", fontWeight: "bold" }}>Login</Text>
+        </TouchableOpacity>
+      </Text>
+      <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
+        New here?
+        <TouchableOpacity>
+          {" "}
+          <Text style={{ color: "#daa520", fontWeight: "bold" }}>
+            SignUp
+          </Text>{" "}
         </TouchableOpacity>
       </Text>
     </View>

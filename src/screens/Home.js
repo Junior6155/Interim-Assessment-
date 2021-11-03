@@ -39,5 +39,3 @@ export default function Home({ navigation }) {
     </View>
   );
 }
-
-//style={{ flexDirection: "row" }}
