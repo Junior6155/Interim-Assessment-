@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TextInput, View } from "react-native";
 import { Ionicons, AntDesign } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
@@ -23,9 +23,35 @@ export default function Home({ navigation }) {
         <TouchableOpacity>
           <Ionicons name="settings" size={24} color="cornflowerblue" />
         </TouchableOpacity>
-        <TouchableOpacity>
-          <AntDesign name="search1" size={24} color="dodgerblue" />
-        </TouchableOpacity>
+
+        <View
+          style={{
+            backgroundColor: "snow",
+            borderRadius: 1,
+            flexDirection: "row",
+            alignItems: "center",
+            padding: 5,
+
+            marginTop: 5,
+          }}
+        >
+          <AntDesign name="search1" size={24} color="dodgerblue" />{" "}
+          <TextInput
+            style={{
+              color: "black",
+              marginLeft: 10,
+              height: 40,
+              margin: 12,
+              borderWidth: 5,
+              padding: 10,
+              fontSize: 15,
+              fontWeight: "300, bold",
+            }}
+            placeholder="Search"
+            keyboardType="ascii-capable"
+          />
+        </View>
+
         <TouchableOpacity
           onPress={() => {
             navigation.navigate("Cart");

@@ -14,8 +14,8 @@ export default function Login({ navigation }) {
     >
       <Image
         style={{
-          width: 250,
-          height: 300,
+          width: 300,
+          height: 350,
           borderRadius: 10,
           marginBottom: 20,
         }}
@@ -26,7 +26,6 @@ export default function Login({ navigation }) {
 
       <View
         style={{
-          background: "#00bfff",
           borderRadius: 10,
           flexDirection: "row",
           alignItems: "center",
@@ -40,6 +39,10 @@ export default function Login({ navigation }) {
           style={{
             color: "black",
             marginLeft: 10,
+            height: 40,
+            margin: 12,
+            borderWidth: 5,
+            padding: 10,
             fontSize: 15,
             fontWeight: "300, bold",
           }}
@@ -51,7 +54,7 @@ export default function Login({ navigation }) {
       <View
         style={{
           alignItems: "center",
-          background: "#1e90ff",
+
           borderRadius: 10,
           flexDirection: "row",
           padding: 5,
@@ -64,6 +67,10 @@ export default function Login({ navigation }) {
         <TextInput
           style={{
             color: "#black",
+            height: 40,
+            margin: 12,
+            borderWidth: 5,
+            padding: 10,
             fontSize: 15,
             fontWeight: "300, bold",
             marginLeft: 15,
