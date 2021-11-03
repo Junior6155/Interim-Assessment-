@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, Image, TouchableOpacity, TextInput } from "react-native";
+import { Text, View, Image, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 export default function Login({ navigation }) {
@@ -24,7 +24,7 @@ export default function Login({ navigation }) {
         }}
       />
 
-      <TextInput
+      <TouchableOpacity
         style={{
           background: "#b0c4de",
           borderRadius: 10,
@@ -35,6 +35,7 @@ export default function Login({ navigation }) {
           marginTop: 20,
         }}
       >
+        <AntDesign name="user" size={24} color="black" />
         <Text
           style={{
             color: "black",
@@ -45,17 +46,27 @@ export default function Login({ navigation }) {
         >
           Username or email
         </Text>
-      </TextInput>
+      </TouchableOpacity>
       <TouchableOpacity
         style={{
+          alignItems: "center",
           background: "#20b2aa",
           borderRadius: 10,
+          flexDirection: "row",
           padding: 10,
           paddingHorizontal: 60,
           marginTop: 20,
         }}
       >
-        <Text style={{ color: "black", fontSize: 15, fontWeight: "300" }}>
+        <AntDesign name="lock" size={24} color="black" />
+        <Text
+          style={{
+            color: "black",
+            marginLeft: 10,
+            fontSize: 15,
+            fontWeight: "300",
+          }}
+        >
           Password
         </Text>
       </TouchableOpacity>

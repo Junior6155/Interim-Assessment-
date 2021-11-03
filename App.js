@@ -3,8 +3,9 @@ import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import Login from "./screens/Login";
-import Home from "./screens/Home";
+import Login from "./src/screens/Login";
+import Home from "./src/screens/Home";
+import Cart from "./src/screens/Cart";
 
 export default function App() {
   const MainNavigator = createStackNavigator();
@@ -18,6 +19,7 @@ export default function App() {
         >
           <MainNavigator.Screen name="Home" component={Home} />
           <MainNavigator.Screen name="Login" component={Login} />
+          <MainNavigator.Screen name="Cart" component={Cart} />
         </MainNavigator.Navigator>
       </NavigationContainer>
     </View>
