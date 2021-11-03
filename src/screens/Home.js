@@ -27,6 +27,7 @@ export default function Home({ navigation }) {
         <View
           style={{
             backgroundColor: "snow",
+
             borderRadius: 1,
             flexDirection: "row",
             alignItems: "center",
@@ -42,6 +43,7 @@ export default function Home({ navigation }) {
               marginLeft: 10,
               height: 40,
               margin: 12,
+              borderColor: "dodgerblue",
               borderWidth: 5,
               padding: 10,
               fontSize: 15,

@@ -27,6 +27,7 @@ export default function Login({ navigation }) {
       <View
         style={{
           borderRadius: 10,
+
           flexDirection: "row",
           alignItems: "center",
           padding: 5,
@@ -34,13 +35,14 @@ export default function Login({ navigation }) {
           marginTop: 5,
         }}
       >
-        <AntDesign name="user" size={24} color="black" />{" "}
+        <AntDesign name="user" size={24} color="darkcyan" />{" "}
         <TextInput
           style={{
             color: "black",
             marginLeft: 10,
             height: 40,
             margin: 12,
+            borderColor: "cyan",
             borderWidth: 5,
             padding: 10,
             fontSize: 15,
@@ -63,12 +65,13 @@ export default function Login({ navigation }) {
         }}
       >
         {" "}
-        <AntDesign name="lock" size={24} color="black" />
+        <AntDesign name="lock" size={24} color="cadetblue" />
         <TextInput
           style={{
             color: "#black",
             height: 40,
             margin: 12,
+            borderColor: "aquamarine",
             borderWidth: 5,
             padding: 10,
             fontSize: 15,
@@ -86,14 +89,14 @@ export default function Login({ navigation }) {
             navigation.navigate("Home");
           }}
         >
-          <Text style={{ color: "crimson", fontWeight: "bold" }}>Login</Text>
+          <Text style={{ color: "royalblue", fontWeight: "bold" }}>Login</Text>
         </TouchableOpacity>
       </Text>
       <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
         New here?
         <TouchableOpacity>
           {" "}
-          <Text style={{ color: "#daa520", fontWeight: "bold" }}>
+          <Text style={{ color: "deepskyblue", fontWeight: "bold" }}>
             SignUp
           </Text>{" "}
         </TouchableOpacity>
