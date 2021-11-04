@@ -1,5 +1,13 @@
 import React from "react";
-import { TextInput, View } from "react-native";
+import {
+  TextInput,
+  View,
+  Text,
+  FlatList,
+  Image,
+  ScrollView,
+  Button,
+} from "react-native";
 import { Ionicons, AntDesign } from "@expo/vector-icons";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
@@ -15,6 +23,23 @@ export default function Home({ navigation }) {
     >
       <View
         style={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Text
+          style={{
+            marginTop: 10,
+            fontWeight: "800, bold",
+            fontSize: 30,
+            color: "darkslateblue",
+          }}
+        >
+          Discover Your Best{" "}
+        </Text>
+      </View>
+      <View
+        style={{
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
@@ -27,31 +52,30 @@ export default function Home({ navigation }) {
         <View
           style={{
             backgroundColor: "snow",
-
-            borderRadius: 1,
+            borderWidth: 2,
+            height: 40,
+            margin: 12,
+            padding: 10,
+            borderColor: "dodgerblue",
             flexDirection: "row",
             alignItems: "center",
-            padding: 5,
-
-            marginTop: 5,
+            borderRadius: 20,
           }}
         >
-          <AntDesign name="search1" size={24} color="dodgerblue" />{" "}
           <TextInput
             style={{
               color: "black",
               marginLeft: 10,
-              height: 40,
-              margin: 12,
-              borderColor: "dodgerblue",
-              borderWidth: 5,
-              padding: 10,
               fontSize: 15,
               fontWeight: "300, bold",
+              borderColor: "dodgerblue",
             }}
             placeholder="Search"
             keyboardType="ascii-capable"
           />
+          <TouchableOpacity>
+            <AntDesign name="search1" size={24} color="dodgerblue" />
+          </TouchableOpacity>
         </View>
 
         <TouchableOpacity
@@ -63,7 +87,108 @@ export default function Home({ navigation }) {
         </TouchableOpacity>
       </View>
 
-      <View></View>
+      <View
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Text
+          style={{
+            marginTop: 10,
+            fontWeight: "800, bold",
+            fontSize: 25,
+            color: "black",
+          }}
+        >
+          POPULAR{" "}
+        </Text>
+      </View>
+
+      <View
+        style={{
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <Image
+          style={{
+            width: 200,
+            height: 250,
+            borderRadius: 10,
+            marginBottom: 20,
+          }}
+          source={require("../images/hess.jpg")}
+        />
+        <View style={{ alignItems: "center" }}>
+          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
+            Pink Beats
+          </Text>
+        </View>
+        <View>
+          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
+            $15.49
+          </Text>
+        </View>
+        <Image
+          style={{
+            width: 200,
+            height: 250,
+            borderRadius: 10,
+            marginBottom: 20,
+          }}
+          source={require("../images/stock.jpg")}
+        />
+        <View style={{ alignItems: "center" }}>
+          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
+            Pink Beats
+          </Text>
+        </View>
+        <View>
+          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
+            $15.49
+          </Text>
+        </View>
+        <Image
+          style={{
+            width: 200,
+            height: 250,
+            borderRadius: 10,
+            marginBottom: 20,
+          }}
+          source={require("../images/kitty.jpg")}
+        />
+        <View style={{ alignItems: "center" }}>
+          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
+            Pink Beats
+          </Text>
+        </View>
+        <View>
+          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
+            $15.49
+          </Text>
+        </View>
+        <Image
+          style={{
+            width: 200,
+            height: 250,
+            borderRadius: 10,
+            marginBottom: 20,
+          }}
+          source={require("../images/sebas.jpg")}
+        />
+        <View style={{ alignItems: "center" }}>
+          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
+            Pink Beats
+          </Text>
+        </View>
+        <View>
+          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
+            $15.49
+          </Text>
+        </View>
+      </View>
     </View>
   );
 }

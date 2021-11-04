@@ -18,6 +18,7 @@ export default function Login({ navigation }) {
           height: 350,
           borderRadius: 10,
           marginBottom: 20,
+          resizeMode: "cover",
         }}
         source={{
           uri: "https://images.unsplash.com/photo-1593359863503-f598684c806f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGhlYWRwaG9uZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
@@ -35,7 +36,7 @@ export default function Login({ navigation }) {
           marginTop: 5,
         }}
       >
-        <AntDesign name="user" size={24} color="darkcyan" />{" "}
+        <AntDesign name="user" size={24} color="darkcyan" />
         <TextInput
           style={{
             color: "black",
@@ -64,11 +65,10 @@ export default function Login({ navigation }) {
           marginTop: 5,
         }}
       >
-        {" "}
         <AntDesign name="lock" size={24} color="cadetblue" />
         <TextInput
           style={{
-            color: "#black",
+            color: "black",
             height: 40,
             margin: 12,
             borderColor: "aquamarine",
@@ -95,10 +95,9 @@ export default function Login({ navigation }) {
       <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
         New here?
         <TouchableOpacity>
-          {" "}
           <Text style={{ color: "deepskyblue", fontWeight: "bold" }}>
             SignUp
-          </Text>{" "}
+          </Text>
         </TouchableOpacity>
       </Text>
     </View>
