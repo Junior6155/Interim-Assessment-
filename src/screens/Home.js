@@ -107,7 +107,7 @@ export default function Home({ navigation }) {
 
       <View
         style={{
-          flexDirection: "column",
+          flexDirection: "row",
           alignItems: "center",
           justifyContent: "center",
         }}
@@ -121,16 +121,7 @@ export default function Home({ navigation }) {
           }}
           source={require("../images/hess.jpg")}
         />
-        <View style={{ alignItems: "center" }}>
-          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
-            Pink Beats
-          </Text>
-        </View>
-        <View>
-          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
-            $15.49
-          </Text>
-        </View>
+
         <Image
           style={{
             width: 200,
@@ -140,16 +131,6 @@ export default function Home({ navigation }) {
           }}
           source={require("../images/stock.jpg")}
         />
-        <View style={{ alignItems: "center" }}>
-          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
-            Pink Beats
-          </Text>
-        </View>
-        <View>
-          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
-            $15.49
-          </Text>
-        </View>
         <Image
           style={{
             width: 200,
@@ -159,16 +140,6 @@ export default function Home({ navigation }) {
           }}
           source={require("../images/kitty.jpg")}
         />
-        <View style={{ alignItems: "center" }}>
-          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
-            Pink Beats
-          </Text>
-        </View>
-        <View>
-          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
-            $15.49
-          </Text>
-        </View>
         <Image
           style={{
             width: 200,
@@ -178,16 +149,6 @@ export default function Home({ navigation }) {
           }}
           source={require("../images/sebas.jpg")}
         />
-        <View style={{ alignItems: "center" }}>
-          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
-            Pink Beats
-          </Text>
-        </View>
-        <View>
-          <Text style={{ marginTop: 10, fontWeight: "500", color: "grey" }}>
-            $15.49
-          </Text>
-        </View>
       </View>
     </View>
   );
