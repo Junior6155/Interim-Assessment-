@@ -12,13 +12,7 @@ import {
 } from "react-native";
 import { MaterialIcons, Ionicons } from "@expo/vector-icons";
 import Constants from "expo-constants";
-import catData from "../data/categories";
-import todaysPickData from "../data/todaysPickAll";
 import allData from "../data/all";
-import capData from "../data/cap";
-import glassData from "../data/glass";
-import shirtData from "../data/shirt";
-import shoeData from "../data/shoe";
 import { useNavigationState } from "@react-navigation/core";
 
 export default function Home({ route, navigation }) {
@@ -30,12 +24,6 @@ export default function Home({ route, navigation }) {
   useEffect(() => {
     LogBox.ignoreLogs(["VirtualizedLists should never be nested"]);
   }, []);
-
-  console.log(shoeData);
-  const [selectedCatID, setSelectedCat] = useState(1);
-  const [selectedCatName, setSelectedCatName] = useState("All");
-  const [liked, setLiked] = useState(false);
-  const [selectedItemID, setSelectedItemID] = useState();
 
   const isLiked = ({ item }) => {
     setLiked(!liked);
@@ -65,10 +53,10 @@ export default function Home({ route, navigation }) {
   };
 
   const renderSelectedCategoryData = () => {
-    if (selectedCatID === 1) {
+    if (allData === 1) {
       return (
         <View>
-          <Text style={styles.textAboveCard}>Today's Pick</Text>
+          <Text style={styles.textAboveCard}>Popular picks</Text>
           <View>
             <FlatList
               data={todaysPickData}
@@ -115,7 +103,7 @@ export default function Home({ route, navigation }) {
           </View>
         </View>
       );
-    } else if (selectedCatID === 2) {
+    } else if (allData === 2) {
       return (
         <View>
           <View
@@ -146,7 +134,7 @@ export default function Home({ route, navigation }) {
           />
         </View>
       );
-    } else if (selectedCatID === 3) {
+    } else if (allData === 3) {
       return (
         <View>
           <View
@@ -177,7 +165,7 @@ export default function Home({ route, navigation }) {
           />
         </View>
       );
-    } else if (selectedCatID === 4) {
+    } else if (allData === 4) {
       return (
         <View>
           <View
@@ -208,7 +196,7 @@ export default function Home({ route, navigation }) {
           />
         </View>
       );
-    } else if (selectedCatID === 5) {
+    } else if (allData === 5) {
       return (
         <View>
           <View
@@ -382,13 +370,6 @@ export default function Home({ route, navigation }) {
         >
           Categories
         </Text>
-        <FlatList
-          data={catData}
-          renderItem={renderCategoryData}
-          keyExtractor={(item) => item.id}
-          horizontal={true}
-          showsHorizontalScrollIndicator={false}
-        />
       </View>
 
       <ScrollView
