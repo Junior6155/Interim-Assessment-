@@ -27,7 +27,7 @@ export default function Product({ navigation }) {
           marginVertical: 40,
         }}
       >
-        Headphones {"\n"} for gf{" "}
+        Headphones {"\n"} To Enchance Your Music Experience{" "}
       </Text>
 
       <TouchableOpacity onPress={() => navigation.navigate("Home")}>
